@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Philemon Hailemariam</title>
+
+<style>
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#0f172a;
+color:#e5e7eb;
+margin:0;
+line-height:1.6;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
+}
+
+h1,h2,h3{
+color:white;
+}
+
+a{
+color:#60a5fa;
+text-decoration:none;
+}
+
+nav{
+position:sticky;
+top:0;
+background:#020617;
+padding:15px 20px;
+border-bottom:1px solid #1e293b;
+}
+
+nav a{
+margin-right:20px;
+color:#cbd5f5;
+}
+
+.hero{
+padding:80px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#94a3b8;
+font-size:18px;
+}
+
+.buttons a{
+display:inline-block;
+margin:10px;
+padding:10px 18px;
+border-radius:8px;
+background:#2563eb;
+color:white;
+}
+
+.section{
+margin-top:80px;
+}
+
+.card{
+background:#111827;
+padding:20px;
+border-radius:10px;
+margin-top:20px;
+border:1px solid #1f2937;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.skills span{
+display:inline-block;
+background:#1f2937;
+padding:8px 12px;
+border-radius:6px;
+margin:5px;
+}
+
+footer{
+text-align:center;
+padding:40px;
+color:#94a3b8;
+}
+
+@media(max-width:800px){
+.grid{
+grid-template-columns:1fr;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#about">About</a>
+<a href="#research">Research</a>
+<a href="#publication">Publication</a>
+<a href="#experience">Experience</a>
+<a href="#teaching">Teaching</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+<h1>Philemon Hailemariam</h1>
+<p>Ph.D. Researcher in Trustworthy Machine Learning and ML Security</p>
+
+<div class="buttons">
+<a href="mailto:philemon@umich.edu">Email</a>
+<a href="https://www.linkedin.com/in/philenku/">LinkedIn</a>
+<a href="#">GitHub</a>
+<a href="#">Resume</a>
+</div>
+</section>
+
+
+<div class="container">
+
+<section id="about" class="section">
+<h2>About</h2>
+
+<p>
+I am a Ph.D. student in Computer and Information Science at the University of Michigan Rackham Graduate School, specializing in Systems and Security. My research focuses on trustworthy machine learning, with emphasis on defending models against data poisoning and backdoor attacks. I study how training samples influence model parameter updates and develop systems to detect malicious behavior in training data.
+</p>
+
+</section>
+
+
+<section id="research" class="section">
+
+<h2>Featured Research</h2>
+
+<div class="card">
+
+<h3>PoisonSpot</h3>
+
+<p>
+PoisonSpot is a defense system that protects machine learning models from stealthy clean-label data poisoning attacks by tracing training-sample influence on model parameter updates.
+</p>
+
+<p>
+The system outperforms the state-of-the-art defense ASSET on benchmark datasets including CIFAR-10, STL-10, and ImageNet-100.
+</p>
+
+<p>
+The framework was released as an open-source artifact and received ACM CCS 2025 badges for artifact availability, functionality, and reproduced results.
+</p>
+
+<p>
+<a href="https://dl.acm.org/doi/10.1145/3719027.3744802">Paper</a> |
+<a href="https://doi.org/10.5281/zenodo.15558038">Artifact</a>
+</p>
+
+</div>
+
+</section>
+
+
+
+<section id="publication" class="section">
+
+<h2>Publication</h2>
+
+<div class="card">
+
+<p>
+
+<b>PoisonSpot: Precise Spotting of Clean-Label Backdoors via Fine-Grained Training Provenance Tracking</b>
+
+</p>
+
+<p>
+Philemon Hailemariam and Birhanu Eshete
+</p>
+
+<p>
+ACM SIGSAC Conference on Computer and Communications Security (CCS 2025), Taipei, Taiwan.
+</p>
+
+<p>
+<a href="https://dl.acm.org/doi/10.1145/3719027.3744802">View Paper</a>
+</p>
+
+</div>
+
+</section>
+
+
+
+<section id="experience" class="section">
+
+<h2>Research Experience</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Graduate Research Assistant</h3>
+
+<p><b>University of Michigan-Dearborn</b></p>
+
+<p>
+Developed PoisonSpot, a defense system against stealthy clean-label data poisoning attacks using training provenance tracking.
+</p>
+
+<p>
+Evaluated across CIFAR-10, STL-10, and ImageNet-100, outperforming existing defenses.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Undergraduate Research Assistant</h3>
+
+<p><b>Duke University – Bergin Lab</b></p>
+
+<p>
+Developed deep learning models for detecting smoke plumes from satellite imagery of open trash burning.
+</p>
+
+<p>
+Classifier achieved 88% accuracy; segmentation model achieved 97% pixel-level accuracy.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Data Science Research Fellow</h3>
+
+<p><b>Duke University – Data+</b></p>
+
+<p>
+Built an auto-refreshing dashboard in Python and Datawrapper to visualize plastic waste collection trends.
+</p>
+
+<p>
+Processed and visualized Qualtrics data integrated into Anecdata.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="teaching" class="section">
+
+<h2>Teaching</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Graduate Teaching Assistant</h3>
+
+<p>CIS 316 – Practical Computer Security</p>
+
+<p>
+Graded assignments and exams and provided detailed feedback to 38 students.
+</p>
+
+<p>
+Delivered guest lecture on machine learning security.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Graduate Teaching Assistant</h3>
+
+<p>CIS 479 – Introduction to Artificial Intelligence</p>
+
+<p>
+Provided grading and feedback to support student learning in AI concepts.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="skills" class="section">
+
+<h2>Technical Skills</h2>
+
+<div class="card skills">
+
+<p><b>Machine Learning Libraries</b></p>
+
+<span>PyTorch</span>
+<span>NumPy</span>
+<span>Pandas</span>
+<span>Scikit-learn</span>
+<span>Matplotlib</span>
+<span>Seaborn</span>
+
+<p><b>Programming</b></p>
+
+<span>Python</span>
+<span>Java</span>
+<span>C</span>
+<span>R</span>
+<span>SQL</span>
+
+<p><b>Tools</b></p>
+
+<span>Git</span>
+<span>Linux</span>
+
+<p><b>Areas</b></p>
+
+<span>Machine Learning</span>
+<span>Deep Learning</span>
+<span>ML Security</span>
+<span>Data Science</span>
+
+</div>
+
+</section>
+
+
+
+<section id="contact" class="section">
+
+<h2>Contact</h2>
+
+<div class="card">
+
+<p>Email: philemon@umich.edu</p>
+
+<p>Phone: 206-799-4320</p>
+
+<p>
+<a href="https://www.linkedin.com/in/philenku/">LinkedIn</a>
+</p>
+
+</div>
+
+</section>
+
+</div>
+
+
+<footer>
+© 2026 Philemon Hailemariam
+</footer>
+
+</body>
+</html>
