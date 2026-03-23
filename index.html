@@ -178,7 +178,7 @@
   </style>
 </head>
 
-<body>
+  <body>
   <nav>
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
@@ -189,70 +189,43 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <section class="hero">
+  <section id="about" class="hero">
     <div class="hero-content">
     <img src="philemon_profile_photo.png" alt="Philemon Hailemariam" class="profile-image" />
     <div class="hero-text">
         <h1>Philemon Hailemariam</h1>
-        <p>Ph.D. Student | Trustworthy Machine Learning | ML Security | Data Science</p>
+        <p>Ph.D. Candidate | Trustworthy Machine Learning | ML Security | Data Science</p>
         <p class="hero-subtext">
-          I am a Ph.D. student in Computer and Information Science at the University of Michigan Rackham Graduate School, specializing in Systems and Security. My work focuses on trustworthy machine learning, machine learning security, and building practical defenses against data poisoning and backdoor attacks.
-        </p>
+          I am a Ph.D. candidate specializing in trustworthy machine learning (security and privacy). I published at ACM CCS with experience building reproducible ML defense pipeline against data poisoning. </p>
 
         <div class="buttons">
           <a href="mailto:philemon@umich.edu">Email</a>
           <a href="https://www.linkedin.com/in/philenku/" target="_blank">LinkedIn</a>
-          <a href="#" class="secondary">GitHub</a>
-          <a href="#" class="secondary">Resume</a>
+          <a href="https://github.com/philenku" target="_blank" class="secondary">GitHub</a>
         </div>
       </div>
     </div>
   </section>
 
   <div class="container">
-    <section id="about" class="section">
-      <h2>About</h2>
-
-      <div class="card">
-        <p>
-          I am interested in applying machine learning, security, and data science to real-world problems, especially those involving trustworthy and robust AI systems. My background combines research depth with practical system building, model evaluation, data analysis, and technical communication. I am particularly interested in industry roles related to machine learning, AI security, trustworthy AI, and data-driven product or research work.
-        </p>
-      </div>
-
-      <div class="card featured">
-        <div class="featured-label">Featured Work</div>
-        <h3>PoisonSpot</h3>
-        <p>
-          PoisonSpot is my flagship machine learning security project. It is a defense system that protects machine learning models from stealthy clean-label data poisoning attacks by tracing how training samples influence model parameter updates.
-        </p>
-        <p>
-          The system outperformed the state-of-the-art defense ASSET on benchmark datasets including CIFAR-10, STL-10, and ImageNet-100, and was released as an open-source framework with full experimental pipelines.
-        </p>
-        <p>
-          The artifact received ACM CCS 2025 badges for <b>Artifacts Available</b>, <b>Artifacts Evaluated – Functional</b>, and <b>Results Reproduced</b>.
-        </p>
-        <p>
-          <a href="https://dl.acm.org/doi/10.1145/3719027.3744802" target="_blank">Paper</a> |
-          <a href="https://doi.org/10.5281/zenodo.15558038" target="_blank">Artifact</a>
-        </p>
-      </div>
-    </section>
-
     <section id="experience" class="section">
       <h2>Experience</h2>
 
       <div class="grid">
         <div class="card">
-          <h3>Graduate Research Assistant</h3>
+          <h3>Graduate Researcher</h3>
           <p class="meta">University of Michigan-Dearborn | Data Privacy and Security Lab | Aug 2023 – Present</p>
           <p>
-            Developed PoisonSpot, a defense system that protects machine learning models from stealthy clean-label data poisoning by tracing training-sample influence on parameter updates.
+            Engineered PoisonSpot, an ML security defense against stealthy clean-label data poisoning, achieving >98% detection, <0.5% false positive rate, and <1% attack success rate on average across diverse attack settings, with negligible impact on model utility.
           </p>
           <p>
-            Evaluated the system on CIFAR-10, STL-10, and ImageNet-100, outperforming the state-of-the-art defense ASSET.
+            Built and released an open-source ML defense framework with end-to-end reproducible experimental pipelines, earning ACM CCS 2025 Artifacts Available, Artifacts Evaluated–Functional, and Results Reproduced badges. 
           </p>
           <p>
-            Released an open-source ML defense framework with full experimental pipelines and published the work at ACM CCS 2025.
+            Adapting PoisonSpot for LLM fine-tuning pipelines, focusing on provenance-based detection and mitigations of Backdoors in LLMs.
+          </p>
+          <p>
+            Contributed to DeepLeak’s explanation-aware membership inference attack and hardening defense, exposing up to 74.9% more leakage than prior work and reducing leakage by 46.5–95% with ≤3.3% average utility loss. 
           </p>
         </div>
 
@@ -260,12 +233,12 @@
           <h3>Undergraduate Research Assistant</h3>
           <p class="meta">Duke University | Bergin Lab | Feb 2022 – May 2023</p>
           <p>
-            Developed a deep neural network classifier for detecting smoke plumes from satellite imagery of open trash burning on Thilafushi Island, Maldives.
+            Built a deep learning classifier to detect smoke plumes from open trash burning in satellite imagery, achieving 88% test accuracy on a real-world environmental monitoring task.
           </p>
           <p>
-            The classifier achieved 88% test accuracy, and I contributed to a plume segmentation model that achieved 97% pixel-level accuracy and 0.70 IoU.
+            Helped develop an image segmentation pipeline for plume localization, improving detection quality to 97% pixel-level accuracy and 0.70 IoU.          </p>
           </p>
-          <p>
+          <p> 
             Co-authored a peer-reviewed publication on smoke plume detection using machine learning.
           </p>
         </div>
@@ -274,9 +247,6 @@
           <h3>Data Science Research Fellow</h3>
           <p class="meta">Duke University | Data+ | May 2022 – Jul 2022</p>
           <p>
-            Built an auto-refreshing dashboard in Python and Datawrapper to display plastic waste trends.
-          </p>
-          <p>
             Processed and visualized Qualtrics data on Anecdata using AngularJS to support citizen science tracking of plastic trash collection.
           </p>
         </div>
@@ -284,7 +254,7 @@
     </section>
 
     <section id="publications" class="section">
-      <h2>Selected Publications</h2>
+      <h2>Publications</h2>
 
       <div class="grid">
         <div class="card">
@@ -295,10 +265,25 @@
           </p>
           <p>
             <a href="https://dl.acm.org/doi/10.1145/3719027.3744802" target="_blank">View Paper</a>
+            <a href="https://github.com/um-dsp/PoisonSpot" target="_blank">View Code</a>
           </p>
         </div>
 
+
+
         <div class="card">
+          <h3>DeepLeak: Privacy Enhancing Hardening of Model Explanations Against Membership Leakage</h3>
+          <p class="meta">Hmida, Sbeih, Hailemariam, Eshete | arXiv 2026</p>
+          <p>Explanation-aware membership inference and hardening methods for reducing privacy leakage in model explanations.</p>
+          <p>
+         <div class="project-links">
+            <a href="https://arxiv.org/abs/2601.03429" target="_blank">View Paper</a>
+            <a href="https://github.com/um-dsp/DeepLeak" target="_blank">View Code</a>
+          </div>
+          </p>
+        </div>
+
+                <div class="card">
           <h3>Detecting Trash-Burning Smoke Plumes from Satellite Imagery Using Machine Learning</h3>
           <p class="meta">Co-authored publication | Environmental Science & Technology Letters</p>
           <p>
@@ -308,6 +293,7 @@
             <a href="https://doi.org/10.1021/acs.estlett.3c00225" target="_blank">View Paper</a>
           </p>
         </div>
+        
       </div>
     </section>
 
@@ -320,29 +306,24 @@
           <p class="meta">Ph.D. in Computer and Information Science | Aug 2023 – Present</p>
           <p><b>Specialization:</b> Systems and Security</p>
           <p><b>Research Area:</b> Trustworthy Machine Learning</p>
-          <p><b>GPA:</b> 3.88/4.0</p>
         </div>
 
         <div class="card">
           <h3>University of Michigan-Dearborn</h3>
           <p class="meta">M.S. in Cybersecurity and Information Assurance | Aug 2023 – Apr 2025</p>
-          <p><b>GPA:</b> 3.97/4.0</p>
-          <p><b>Relevant Coursework:</b> Trustworthy AI, Data Security, and Privacy</p>
+          <p><b>Note:</b> Completed concurrently with Ph.D.</p>
+          <p><b>Specialization:</b> Data and Application Security</p>
         </div>
 
         <div class="card">
-          <h3>Duke University / Duke Kunshan University</h3>
+          <h3>Duke University</h3>
           <p class="meta">B.S. in Interdisciplinary Studies (Data Science) | Aug 2019 – May 2023</p>
-          <p><b>GPA:</b> 3.7/4.0</p>
           <p><b>Honors:</b> Dean’s List for Fall 2021 and Spring 2023</p>
         </div>
 
         <div class="card">
           <h3>Duke Kunshan University</h3>
-          <p class="meta">B.S. in Data Science</p>
-          <p>
-            Relevant coursework included statistical machine learning, machine learning, artificial intelligence, and regression analysis.
-          </p>
+          <p class="meta">B.S. in Data Science | Aug 2019 – May 2023</p>
         </div>
       </div>
     </section>
@@ -355,10 +336,13 @@
           <h3>Graduate Teaching Assistant</h3>
           <p class="meta">CIS 316: Practical Computer Security | Sep 2024 – Dec 2024</p>
           <p>
-            Evaluated assignments, homework, and exams and provided detailed, constructive feedback to 38 students.
+            Evaluated assignments, homework, and exams, providing detailed, constructive feedback to 38 students. 
           </p>
           <p>
-            Delivered a guest lecture on machine learning security and led weekly office hours.
+            Delivered guest lecture on ML security, connecting academic theory with real-world applications. 
+          </p>
+          <p> 
+            Led weekly office hours, mentoring students on technical concepts and course projects.
           </p>
         </div>
 
@@ -366,7 +350,10 @@
           <h3>Graduate Teaching Assistant</h3>
           <p class="meta">CIS 479: Introduction to Artificial Intelligence | Jan 2025 – Apr 2025</p>
           <p>
-            Graded assignments and exams and provided individualized feedback to improve student understanding of AI concepts.
+            Graded assignments and exams, ensuring timely feedback for 36 students.
+          </p>
+          <p>
+            Provided individualized feedback to improve student comprehension of AI concepts.
           </p>
         </div>
       </div>
@@ -376,31 +363,26 @@
       <h2>Skills</h2>
 
       <div class="card skills">
-        <p><b>Machine Learning Libraries</b></p>
+        <p><b>Machine Learning</b></p>
+        <span>Python</span>
         <span>PyTorch</span>
         <span>NumPy</span>
         <span>Pandas</span>
         <span>Scikit-learn</span>
-        <span>Matplotlib</span>
-        <span>Seaborn</span>
 
-        <p><b>Programming Languages</b></p>
-        <span>Python</span>
+        <p><b>Languages &amp; Tools</b></p>
         <span>Java</span>
         <span>C</span>
         <span>R</span>
         <span>SQL</span>
-
-        <p><b>Tools</b></p>
+        <span>Bash</span>
         <span>Git</span>
         <span>Linux</span>
 
-        <p><b>Areas of Expertise</b></p>
-        <span>Machine Learning</span>
-        <span>Deep Learning</span>
-        <span>ML Security</span>
-        <span>Trustworthy AI</span>
-        <span>Data Science</span>
+
+        <p><b>Visualization</b></p>
+        <span>Matplotlib</span>
+        <span>Seaborn</span>
       </div>
     </section>
 
@@ -412,7 +394,7 @@
         <p><b>Email:</b> philemon@umich.edu</p>
         <p><b>Phone:</b> 206-799-4320</p>
         <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/philenku/" target="_blank">www.linkedin.com/in/philenku/</a></p>
-        <p><b>GitHub:</b> <a href="#">Add your GitHub link here</a></p>
+        <p><b>GitHub:</b> <a href="https://github.com/philenku">https://github.com/philenku</a></p>
       </div>
     </section>
     
